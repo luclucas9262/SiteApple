@@ -1,0 +1,172 @@
+@font-face {
+  font-family: kingdom;
+  src: url('fonte/Mastery\ Kingdom.otf');
+}
+
+body{
+margin: 0;
+background-color: rgba(128, 128, 128, 0.096);
+
+}
+
+/* <<<<<<<<<<<<<<<topo de navegação  >>>>>>>>>>>>>>*/
+
+
+.menu{
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  position:sticky;
+  top: 0;
+  width: 100%;
+}
+
+.logo{
+  width: 50px;
+  margin: 10px;
+}
+
+.navega{
+  padding-top: 15px;
+}
+
+.a{
+  color: rgb(196, 194, 193);
+  text-decoration: none;
+  font-family: kingdom;
+  font-size: 15px;
+  letter-spacing:2px;
+  text-align: center;
+}
+
+.a:hover{
+  color:rgb(99, 99, 99);
+}
+
+ul{
+  display: flex;
+  list-style-type: none;
+}
+
+li{
+  padding-left: 50px;
+}
+
+.texto{
+  font-family: Kingdom;
+}
+/* <<<<<<<<<<<<<<<FIM>>>>>>>>>>>>>>*/
+
+
+
+/* >>> PRIMEIRA PARRTE IMAGEM IPHONE<<<< */
+
+
+.titulo{
+  text-align: center;
+  display:block;
+  padding: 30px;
+  font-size: 25px;
+}
+
+
+.primeiro{
+  display: flex;
+  background-color: white;
+  box-shadow: 0.1px 0.1px 10px rgba(128, 128, 128, 0.507);
+  justify-content: space-evenly;
+
+  
+}
+
+
+.texto1 {
+  margin-left: 200px;
+  width:  300px;
+  padding-top: 100px;
+  text-align: center;
+  
+}
+
+.imagem1{
+  margin: auto;
+  width: 800px;
+}
+
+
+/* >>>>> SEGUNDA PARRTE IMAGEM IPHONE<<<<<*/
+
+
+.segunda{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+
+
+.imagem2{
+  
+
+}
+
+
+.texto{
+  margin-top: 100px ;
+  text-align: center;
+}
+
+
+footer{
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  height: 30px;
+  padding-top: 20px;
+  color: rgb(212, 212, 212);
+  font-size: 13PX;
+  position: absolute;
+}
+
+
+
+/*>>>>>>BOTAO <<<<<<<<*/
+button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
